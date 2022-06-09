@@ -82,7 +82,7 @@ router.post("/", async (req, res) => {
     });
 }),
   // update product
-  router.put("/:id", async (req, res) => {
+  router.put("/:id", (req, res) => {
     // update product data
     Product.update(req.body, {
       where: {
